@@ -10,6 +10,8 @@ Do you want to listen to a song from YouTube, followed by a playlist on Spotify,
 With this app, you could do all of this without entering and leaving three different applications.
 
 Spotify API isn't very stable. There is a known issue that is still persistent on some devices.
+Initial reported problem in 0.6.3: https://github.com/spotify/android-sdk/issues/139
+Problem still here in 0.7.0 : https://github.com/spotify/android-sdk/issues/180
 
 Apple Music API is not implemented, but it can be added without much problems.
 
