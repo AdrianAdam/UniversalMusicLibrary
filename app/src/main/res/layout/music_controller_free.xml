@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@drawable/background"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_height="match_parent">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ytPlayer">
+    </com.google.android.youtube.player.YouTubePlayerView>
+
+    <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:id="@+id/spaceTop"
+            android:layout_below="@+id/ytPlayer"
+    />
+
+    <EditText android:layout_width="290dp" android:layout_height="40dp"
+              android:id="@+id/etLink"
+              android:textColor="@android:color/white"
+              android:layout_alignParentBottom="true"
+              android:backgroundTint="@android:color/white"
+    />
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/btnAddLink"
+            android:text="Add"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+    />
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/btnPrevious"
+            android:background="@drawable/ic_previous"
+            android:layout_above="@+id/btnAddLink"
+    />
+
+    <Space
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/btnAddLink"
+            android:layout_toRightOf="@+id/btnPrevious"
+            android:id="@+id/space"
+    />
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/btnPlay"
+            android:background="@drawable/ic_play"
+            android:layout_above="@+id/btnAddLink"
+            android:layout_toRightOf="@+id/space"
+    />
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/btnNext"
+            android:background="@drawable/ic_next"
+            android:layout_above="@+id/btnAddLink"
+            android:layout_alignParentEnd="true"
+    />
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_list_posts"
+            android:layout_below="@+id/spaceTop"
+    ></ListView>
+
+</RelativeLayout>

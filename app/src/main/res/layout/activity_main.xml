@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        tools:context=".MainActivity">
+
+    <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+    />
+    <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+    />
+    <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+    />
+    <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+    />
+
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:hint="Email address"
+              android:id="@+id/etEmailAddress"
+              android:backgroundTint="@android:color/white"
+              android:textColor="@android:color/white"
+              android:textColorHint="@android:color/darker_gray"
+              android:inputType="textEmailAddress"
+    />
+
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:hint="Password"
+              android:id="@+id/etPassword"
+              android:backgroundTint="@android:color/white"
+              android:textColor="@android:color/white"
+              android:textColorHint="@android:color/darker_gray"
+              android:inputType="textPassword"
+    />
+
+    <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+    />
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/btnLogin"
+                android:text="Login"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/roundbutton"
+        />
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/btnRegister"
+                android:text="Register"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/roundbutton"
+        />
+    </RelativeLayout>
+
+</LinearLayout>
