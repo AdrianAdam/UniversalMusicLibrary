@@ -12,3 +12,5 @@ With this app, you could do all of this without entering and leaving three diffe
 Spotify API isn't very stable. There is a known issue that is still persistent on some devices.
 
 Apple Music API is not implemented, but it can be added without much problems.
+
+Current status of the app: https://www.youtube.com/watch?v=mqIshSWQ2DI&feature=youtu.be
